@@ -1,6 +1,4 @@
-vllm serve Qwen/Qwen2.5-1.5B-Instruct 
-
-# download dataset
+ # download dataset
 # wget https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered/resolve/main/ShareGPT_V3_unfiltered_cleaned_split.json
 vllm bench serve \
   --backend vllm \
@@ -9,5 +7,3 @@ vllm bench serve \
   --dataset-name sharegpt \
   --dataset-path <your data path>/ShareGPT_V3_unfiltered_cleaned_split.json \
   --num-prompts 10
-
-  # how do i aggregate metrics while while it is running and not after (to display with prom+grafana)? does benchmarking do something different?
