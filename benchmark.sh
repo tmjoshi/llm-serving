@@ -7,5 +7,5 @@ vllm bench serve \
     --dataset-name sharegpt \
     --dataset-path ShareGPT_V3_unfiltered_cleaned_split.json \
     --num-prompts 3000 \
-    --request-rate 20 \
+    --request-rate inf \
     --max-concurrency 1
